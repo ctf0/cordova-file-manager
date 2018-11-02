@@ -43,10 +43,11 @@ function onDeviceReady() {
     + moveDir(currentPath, newPath, newName = null)
     + copyDir(currentPath, newPath, newName = null)
     + getDirMeta(path)
+    + getDirSize(path)
+    + listDir(path, recursive = false)
 
 - Helpers
     + getSdCardPath(item = null, root = false)
     + getSize(bytes, decimals)
     + getParent(entry)
     + checkifExists(path)
-    + listDir(path, recursive = false)
