@@ -17,9 +17,9 @@ function onDeviceReady() {
     fm.requestSdCardPermission().then(() => {
         fm.resolveSdCardLocation().then(() => {
             fm.createDir('my-dir', fm.getSdCardPath()).then((path) => {
-                fm.listDir(path, true).then(() => {
-                    console.log('dirs',fm.dirs)
-                    console.log('files',fm.files)
+                fm.listDir(path, true).then((data) => {
+                    console.log('dirs', data.dirs)
+                    console.log('files', data.files)
                 })
             })
         })
