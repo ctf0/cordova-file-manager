@@ -29,8 +29,8 @@ function onDeviceReady() {
 
 ### The file manager is split into 2 main categories and some helpers
 - File
-    + createFile(name, payload = null, path)
-    + removeFile(name, path)
+    + createFile(name, path, payload = null)
+    + removeFile(path)
     + renameFile(path, newName) 
     + moveFile(currentPath, newPath, newName = null)
     + copyFile(currentPath, newPath, newName = null) 
@@ -38,7 +38,7 @@ function onDeviceReady() {
  
 - Directory
     + createDir(name, path)
-    + removeDir(name, path)
+    + removeDir(path)
     + renameDir(path, newName)
     + moveDir(currentPath, newPath, newName = null)
     + copyDir(currentPath, newPath, newName = null)
