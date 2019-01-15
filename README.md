@@ -43,7 +43,7 @@ function onDeviceReady() {
     + moveDir(currentPath, newPath, newName = null)
     + copyDir(currentPath, newPath, newName = null)
     + getDirMeta(path)
-    + getDirSize(path) ***Not Yet***
+    + getDirSize(path) ***(Not Yet)***
     + listDir(path, recursive = false)
 
 - Helpers
